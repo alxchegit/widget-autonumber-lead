@@ -1,0 +1,40 @@
+<div class="amoai-autonumber_lead-field_condition">
+    {% if (loop is defined and not loop.first) or (deleteable is defined and deleteable) %}
+        <div class="condition_delete">
+            Удалить условие
+        </div>
+    {% endif %}
+    {% set anum_tpl = cond.anum_tpl ? cond.anum_tpl : '' %}
+    <div class="form-group">
+        <div class="form-group__title">Поле нумерации</div>
+        <div class="form-group__control">
+           {{ self.render(
+                {ref: '/tmpl/controls/input.twig'},
+                {
+                    type: 'text',
+                    name: 'anum_tpl',
+                    value: anum_tpl,
+                    placeholder: 'Задайте маску для нумерации',
+                    class_name:'input_anum_tpl'
+                }
+            ) }}
+        </div>
+    </div>
+    {% set selected = cond.anum_field ? cond.anum_field : '0' %}
+    <div class="form-group">
+        <div class="form-group__title">Выберите поле</div>
+        <div class="form-group__control">
+            
+            <select name="anum_field_select" class="js-anum_field_select" data-selected-id="{{ selected }}"></select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="form-group__title">Маска для нумерации:</div>
+        <div class="form-group__control">
+            {% for mask in masks %}
+                <span class="tpl_item"><a>{{ mask.value }}</a> - {{ mask.text }}</span>
+            {% endfor %}
+        </div>
+    </div>
+</div>

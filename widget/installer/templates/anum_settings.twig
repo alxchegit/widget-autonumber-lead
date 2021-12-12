@@ -1,0 +1,22 @@
+{#
+    fields - массив полей амо
+    conditions - массив настроек
+    masks - массив масок для нумерации    
+#}
+<div class="amoai-autonumber_lead-dp_setting">
+
+    {% if conditions is defined and conditions|length %}
+        {% for cond in conditions %}
+            {% include "templates/field_group.twig" %}
+        {% endfor %}
+    {% else %}
+        {% include "templates/field_group.twig" %}
+    {% endif %}
+    
+</div>
+<div class="amoai-autonumber_lead-insert_conditions">
+    <svg class="svg-icon svg-digital_pipeline--add_trigger-dims">
+      <use xlink:href="#digital_pipeline--add_trigger"></use>
+    </svg>
+    <div>Добавить поле авто нумерации</div>
+</div>

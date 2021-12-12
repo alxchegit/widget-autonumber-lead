@@ -1,0 +1,11 @@
+{
+  "widget": {
+    "name": "Автонумерация сделки",
+    "short_description": "Виджет автонумерации сделки",
+    "description": " "
+  },
+  "settings": {
+    "phone": "Телефон",
+    "params": "Параметры"
+  }
+}

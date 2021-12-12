@@ -1,0 +1,245 @@
+/* settings */
+.amoai-settings .widget-settings__wrap-desc-space {
+    padding-bottom: 175px;
+    position: relative;
+}
+
+.amoai-settings-section_link_brand:hover {
+    text-decoration: none;
+}
+
+.amoai-settings-section_link_brand:after {
+    content: "";
+    position: absolute;
+    top: calc(50% - 9px);
+    right: -5px;
+    display: block;
+    width: 19px;
+    height: 18px;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyBpZD0iU3ltYm9sXzEiIGRhdGEtbmFtZT0iU3ltYm9sIDEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjE2Ljc4MSIgaGVpZ2h0PSIxNi42OSIgdmlld0JveD0iMCAwIDE2Ljc4MSAxNi42OSI+CiAgPGVsbGlwc2UgaWQ9IkVsbGlwc2VfNjEwIiBkYXRhLW5hbWU9IkVsbGlwc2UgNjEwIiBjeD0iOC4zOSIgY3k9IjguMzQ1IiByeD0iOC4zOSIgcnk9IjguMzQ1IiBmaWxsPSIjMDAyMDRlIi8+CiAgPGcgaWQ9Ikdyb3VwXzE2MCIgZGF0YS1uYW1lPSJHcm91cCAxNjAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDMuNzI5IDQuNjE2KSI+CiAgICA8bGluZSBpZD0iTGluZV8yOSIgZGF0YS1uYW1lPSJMaW5lIDI5IiB4Mj0iNy45MzciIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgMy43NDIpIiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjUiLz4KICAgIDxsaW5lIGlkPSJMaW5lXzMwIiBkYXRhLW5hbWU9IkxpbmUgMzAiIHgyPSI1LjI5MiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoOC42NTUgMy43NDIpIHJvdGF0ZSgxMzUpIiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjUiLz4KICAgIDxsaW5lIGlkPSJMaW5lXzMxIiBkYXRhLW5hbWU9IkxpbmUgMzEiIHgyPSI1LjI5MiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoOC42NTUgMy43NDIpIHJvdGF0ZSgtMTM1KSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS13aWR0aD0iMS41Ii8+CiAgPC9nPgo8L3N2Zz4K);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: contain;
+}
+
+.amoai-settings .widget_settings_block__fields {
+    border-top: 1px solid #dcdcdc;
+    padding: 20px 30px 30px;
+    margin: 0 -30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.amoai-settings .widget_settings_block__item_field,
+.amoai-settings .widget_settings_block__controls {
+    box-sizing: border-box;
+    padding: 0 8px;
+    flex-grow: 0;
+}
+
+.amoai-settings .widget_settings_block__input_field {
+    display: block;
+}
+
+.amoai-settings .widget_settings_block__input_field .text-input {
+    width: 100%;
+}
+
+.amoai-settings .widget_settings_block__controls {
+    margin: 20px 5px 0;
+}
+
+.amoai-settings .iti__country-list {
+    z-index: 5;
+}
+
+.amoai-settings-activate_btn {
+    border: 1px solid #4077d6;
+    background: #4c8bf7;
+    color: #ffffff!important;
+    opacity: 1!important;
+}
+
+.amoai-settings-activate_btn:active,
+.amoai-settings-activate_btn:hover {
+    background: #4d85e6!important;
+}
+
+/* order */
+.amoai-settings-order_form input,
+.amoai-settings-order_form textarea {
+    margin: 0 0 8px;
+    width: 100%;
+}
+
+.amoai-settings-order_form input.error {
+    border-color: #f37575;
+}
+
+/* dp-settings */
+.amoai-autonumber_lead-dp_settings
+{
+    max-height: 1000px;
+    overflow-y: auto;
+}
+
+.amoai-autonumber_lead-dp_settings .main-settings-loader-wrapper {
+    margin: 25px 20px 0 0;
+}
+
+.amoai-autonumber_lead-dp_settings .main-settings-spinner {
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    display: block;
+    position: static;
+}
+
+.amoai-autonumber_lead-dp_settings .form-group__title
+{
+    font-weight: 600;
+}
+
+.amoai-autonumber_lead-dp_settings_container {
+    position: relative;
+    min-height: 60px;
+    margin-bottom: 15px;
+}
+
+.amoai-autonumber_lead-dp_settings_container .settings-loader-wrapper {
+    background: rgba(255, 255, 255, .35);
+    position: absolute;
+    top: 0; left: 0;
+    bottom: 0; right: 0;
+    z-index: 1001;
+}
+
+.amoai-autonumber_lead-dp_settings_container .settings-spinner {
+    position: absolute;
+    top: calc(50% - 15px);
+    left: calc(50% - 15px);
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+
+.amoai-autonumber_lead-dp_settings_container .form-group-wrapper {
+    margin-bottom: 20px;
+    overflow-y: scroll;
+    height: 250px;
+}
+
+.amoai-autonumber_lead-dp_settings_container .form-group-wrapper .form-group:last-child {
+    margin-bottom: 0;
+}
+
+.amoai-autonumber_lead-dp_settings_container .form-group__title span {
+    display: block;
+    font-weight: 700;
+}
+
+.amoai-autonumber_lead-dp_settings_container .text-input {
+    width: 100%;
+}
+
+.amoai-autonumber_lead-dp_settings_container .tpl_item {
+    display: block;
+    padding: 2px 0;
+}
+
+.amoai-autonumber_lead-dp_settings_container .tpl_item a {
+    border-bottom: 1px dotted;
+    color: #4c93bd;
+    cursor: pointer;
+}
+
+.amoai-autonumber_lead-dp_setting
+{
+    padding-top: 10px;
+}
+
+.amoai-autonumber_lead-insert_conditions
+{
+    padding: 15px 0;
+    position: relative;
+    color: grey;
+    cursor: pointer;
+}
+
+.amoai-autonumber_lead-insert_conditions div
+{
+    margin-left: 32px;
+}
+
+.amoai-autonumber_lead-insert_conditions .svg-icon
+{
+    position: absolute;
+    top: 13px;
+}
+.amoai-autonumber_lead-field_condition
+{
+    padding-top: 10px;
+    padding-bottom: 1px;
+    position: relative;
+}
+
+.amoai-autonumber_lead-field_condition .condition_delete 
+{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    color: #f37575;
+    cursor: pointer;
+}
+
+.amoai-autonumber_lead-field_condition:before,
+.amoai-autonumber_lead-dp_setting .amoai-autonumber_lead-field_condition:last-child:after,
+.amoai-autonumber_lead-insert_conditions:after
+{
+    content: '';
+    display: block;
+    position: absolute;
+    height: 1px;
+    left: -15px;
+    right: -15px;
+    background-color: #d2d2d2;
+}
+
+.amoai-autonumber_lead-field_condition:before
+{
+    top: 0;
+}
+
+.amoai-autonumber_lead-dp_setting .amoai-autonumber_lead-field_condition:last-child:after,
+.amoai-autonumber_lead-insert_conditions:after
+{
+    bottom: 0;
+}
+
+.amoai-text_field:after,
+.amoai-numeric_field:after
+{
+    
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+    color: #b3b1b1; 
+    font-size: 12px;
+    font-style: italic;
+}
+
+.amoai-numeric_field:after
+{
+    content: '(числовое поле)';
+}
+.amoai-text_field:after
+{
+    content: '(текстовое поле)';
+}
+li.select2-results__option
+{
+    position: relative;
+}

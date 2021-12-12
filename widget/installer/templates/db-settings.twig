@@ -1,0 +1,61 @@
+<div class="form-group">
+    <div class="form-group__title">Название сделки</div>
+    <div class="form-group__control">
+        {{ self.render(
+            {ref: '/tmpl/controls/input.twig'},
+            {
+                type: 'text',
+                name: 'nameTpl',
+                value: nameTpl,
+                placeholder: 'Введите название сделки'
+            }
+        ) }}
+    </div>
+</div>
+
+<div class="form-group-wrapper">
+    <div class="form-group">
+        <div class="form-group__title"></div>
+        <div class="form-group__control">
+            {% for tpl in systemTemplates %}
+                <span class="tpl_item"><a>{{ tpl.tplValue }}</a> - {{ tpl.text }}</span>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="form-group__title"><span>Данные менеджера:</span></div>
+        <div class="form-group__control">
+            {% for tpl in managerTemplates %}
+                <span class="tpl_item"><a>{{ tpl.tplValue }}</a> - {{ tpl.text }}</span>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="form-group__title"><span>Доп. поля сделки:</span></div>
+        <div class="form-group__control">
+            {% for tpl in leadCustomFields %}
+                <span class="tpl_item"><a>{{ tpl.tplValue }}</a> - {{ tpl.text }}</span>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="form-group__title"><span>Данные контакта:</span></div>
+        <div class="form-group__control">
+            {% for tpl in contactTemplates %}
+                <span class="tpl_item"><a>{{ tpl.tplValue }}</a> - {{ tpl.text }}</span>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="form-group__title"><span>Данные компании:</span></div>
+        <div class="form-group__control">
+            {% for tpl in companyTemplates %}
+                <span class="tpl_item"><a>{{ tpl.tplValue }}</a> - {{ tpl.text }}</span>
+            {% endfor %}
+        </div>
+    </div>
+</div>
